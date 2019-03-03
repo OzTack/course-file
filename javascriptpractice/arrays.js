@@ -1,0 +1,10 @@
+var list = ["tiger", "cat", "bear", "bird"];
+consle.log(list[1]);
+var array = ["Banana", "Apples", "Oranges", "Blueberries"];
+array.shift();
+array.sort();
+array.push("kiwi");
+array.shift();
+array.reverse();
+console.log(array);
+var array2 = ["Banana", ["Apples", ["Oranges"], "Blueberries"]];
