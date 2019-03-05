@@ -88,10 +88,14 @@ a {
 }
 
 @media screen and (max-width: 950px) {
-
-ul {
-flex-direction: column;
-}
+  
+  ul {
+    flex-direction: column;
+  }
+  
+  .flex_container {
+    padding: 0;
+  }
 
  .card-container {
      display: flex;
@@ -100,6 +104,7 @@ flex-direction: column;
      align-content: center;
      padding-top: 40px;
      padding-bottom: 40px;
+     margin: 0;
 
  }
  .card_content {
@@ -112,4 +117,6 @@ flex-direction: column;
      margin: 10px;
 
  }
+}
+
 }
