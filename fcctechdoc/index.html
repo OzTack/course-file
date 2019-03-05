@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>FCC Technical Document Page</title>
+</head>
+<body>
+
+<nav id="navbar">
+<header>
+    <h1>CSS position Property</h1>
+</header>
+<ul>
+    <li><a href="#The_position_Property" class="nav-link">The position Property</a></li>
+    <li><a href="#position:_static" class="nav-link">position: static</a></li>
+    <li><a href="#position:_relative" class="nav-link">position: relative</a></li>
+    <li><a href="#position:_fixed" class="nav-link">position: fixed</a></li>
+    <li><a href="#position:_absolute" class="nav-link">position: absolute</a></li>
+
+</ul>
+</nav>
+
+    <main id="main-doc">
+
+        <section class="main-section" id="The_position_Property">
+            <header>
+                <h1>The position Property</h1>
+            </header>
+            <p>
+                The position property specifies the type of positioning method used for an element.
+            </p>
+            <p>
+                    There are five different position values:
+            </p>
+            <ul>
+                <li>static</li>
+                <li>relative</li>
+                <li>fixed</li>
+                <li>absolute</li>
+                <li>sticky</li>
+            </ul>
+        </section>
+
+        <section class="main-section" id="position:_static">
+            <header>
+                <h1>position: static</h1>
+            </header>
+            <p>
+                HTML elements are positioned static by default.
+
+Static positioned elements are not affected by the top, bottom, left, and right properties. <br><br>
+
+An element with <i>position: static;</i> is not positioned in any special way; it is always positioned according to the normal flow of the page:
+            </p>
+            <p>
+                Example:
+            </p>
+            <code>
+                <pre>
+                    div.static {
+                      position: static;
+                      border: 3px solid #73AD21;
+                    }</pre>
+            </code>
+
+        </section>
+        <section class="main-section" id="position:_relative">
+            <header>
+                <h1>position: relative</h1>
+            </header>
+            <p>
+                An element with position: relative; is positioned relative to its normal position. <br><br>
+
+Setting the top, right, bottom, and left properties of a relatively-positioned element will cause it to be adjusted away from its normal position. Other content will not be adjusted to fit into any gap left by the element. <br><br> Example
+            </p>
+            <code>
+                <pre>
+                    div.relative {
+                      position: relative;
+                      left: 30px;
+                      border: 3px solid #73AD21;
+                    }</pre>
+
+            </code>
+
+        </section>
+        <section class="main-section" id="position:_fixed">
+            <header>
+                <h1>position: fixed</h1>
+            </header>
+            <p>
+                An element with position: fixed; is positioned relative to the viewport, which means it always stays in the same place even if the page is scrolled. The top, right, bottom, and left properties are used to position the element.</p>
+
+<p>A fixed element does not leave a gap in the page where it would normally have been located.</p>
+
+
+
+    <p>Notice the fixed element in the lower-right corner of the page. Here is the CSS that is used:</p>
+<p>Example:</p>
+            <code>
+                <pre>
+                    div.fixed {
+                      position: fixed;
+                      bottom: 0;
+                      right: 0;
+                      width: 300px;
+                      border: 3px solid #73AD21;
+                    }</pre>
+                </code>
+        </section>
+        <section class="main-section" id="position:_absolute">
+            <header>
+                <h1>position: absolute</h1>
+            </header>
+            <p>
+                An element with position: absolute; is positioned relative to the nearest positioned ancestor (instead of positioned relative to the viewport, like fixed).<br><br>
+
+However; if an absolute positioned element has no positioned ancestors, it uses the document body, and moves along with page scrolling.<br><br>
+
+Note: A "positioned" element is one whose position is anything except static.<br><br>
+Example:
+            </p>
+            <code>
+                <pre>
+                    div.relative {
+                      position: relative;
+                      width: 400px;
+                      height: 200px;
+                      border: 3px solid #73AD21;
+                    }</pre>
+            </code>
+            <code>
+                <pre>
+                    div.absolute {
+                      position: absolute;
+                      top: 80px;
+                      right: 0;
+                      width: 200px;
+                      height: 100px;
+                      border: 3px solid #73AD21;
+                    }</pre>
+            </code>
+
+        </section>
+
+    </main>
+
+</body>
+</html>
