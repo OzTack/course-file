@@ -87,13 +87,29 @@ a {
     width: 100%;
 }
 
-@media screen and (max-width: 1180px) {
+@media screen and (max-width: 950px) {
 
- ul {
-     padding-top: 25px;
+ul {
+flex-direction: column;
+}
+
+ .card-container {
+     display: flex;
      flex-direction: column;
+     flex-wrap: wrap;
+     align-content: center;
+     padding-top: 40px;
+     padding-bottom: 40px;
+
  }
- .flex_container {
+ .card_content {
+     display: flex;
+     flex-direction: column;
+     background-color: #fff;
+     border: 1px solid black;
      align-items: center;
+     width: 80%;
+     margin: 10px;
+
  }
 }

@@ -1,0 +1,119 @@
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+<!--
+
+Hello Camper!
+
+For now, the test suite only works in Chrome! Please read the README below in the JS Editor before beginning. Feel free to delete this message once you have read it. Good luck and Happy Coding!
+
+- The freeCodeCamp Team
+
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+
+    <header id="header">
+        <!-- use flexbox here for sticky navigation -->
+        <div class="flex_container top">
+            <div class="logopos">
+                <img id="header-img" border-radius="10%" src="https://t3.ftcdn.net/jpg/01/03/36/02/240_F_103360283_1I7rsOcKIhU32UegXsk6CYvCjrNbuiJl.jpg" alt="ukulele logo">
+                <p>
+                    Ukulele world
+                </p>
+            </div>
+            <nav id="nav-bar">
+                <ul>
+                    <a class="nav-link" href="#form">Email List</a>
+                    <a class="nav-link" href="#features">Features</a>
+                    <a class="nav-link" href="#products">Products</a>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <br>
+    <div class="main_content" id="features">
+
+
+        <h1 id="title">Ukulele World</h1>
+        <h2>The place for all things Ukuele</h2>
+        <p>
+            Welcome to the one stop shop for ukulele information and sale.<br>
+            Please have a look and <em>listen</em> to these lovely instruments and then see if there is one that appeals to you ;)
+        </p>
+        <br>
+        <br><br><br><br <!-- insert a video here with ID of video -->
+        <div class="ukedemovid" ">
+            <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/-wrcC2q_vLc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+
+        <!-- insert 'cards" showing differnet Ukulele and prices' -->
+        <div class="card-container" id="products">
+
+            <div class="card_content">
+                <div class="title">
+                    Title of Card 1
+                </div>
+                <img class="uke_pic" src="https://images.pexels.com/photos/586333/pexels-photo-586333.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="">
+                <div class="uke_caption">
+                    caption on the picture
+                </div>
+
+
+            </div>
+
+            <div class="card_content">
+                <div class="title">
+                    Title of instrument 2
+                </div>
+                <img class="uke_pic" src="https://images.pexels.com/photos/1537171/pexels-photo-1537171.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="">
+                <div class="uke_caption">
+                    caption on the picture
+                </div>
+            </div>
+
+
+            <div class="card_content">
+                <div class="title">
+                    Title of instrument 3
+                </div>
+                <img class="uke_pic" src="https://images.pexels.com/photos/258283/pexels-photo-258283.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="">
+                <div class="uke_caption">
+                    caption on the picture
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+        <!-- insert form here with email with placehold and submit -->
+
+        <form id="form" action="https://www.freecodecamp.com/email-submit" target="_blank">
+            <label>email address</label>
+            <input id="email" type="email" name="email" placeholder="enter your email"><br>
+            <input type="submit" id="submit" value="Submit">
+
+        </form>
+
+    </div>
+    <br><br>
+
+
+    <footer class="flex_container wide ">
+        <div class="footer_text">
+            This is the footer
+        </div>
+    </footer>
+
+</body>
+
+</html>
