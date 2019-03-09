@@ -86,11 +86,9 @@ body {
     border-radius: 50%;
     border: 1px solid black;
     background-color: #eee;
-    /* text-decoration: none; */
     line-height: 100px;
     margin: 20px;
  }
-
 
  @media screen and (max-width: 950px) {
 
