@@ -6,8 +6,13 @@
   
 }
 
+a {
+  text-decoration: none;
+  color: black;
+}
+
 body {
-  background-color: bisque;
+  background-color: #878787;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   color: black;
   text-align: center;
@@ -16,12 +21,8 @@ body {
 #navbar  {
   width: 100%;
   position: fixed;
-  /* top: 0 0; */
-
-  /* display: inline-block; this was lethal!*/
-
-
-  background-color: aqua;
+  top: 0;
+  background-color: #e3f4f4;
   text-align: right;
   padding: 10px;
 }
@@ -34,21 +35,17 @@ body {
 }
 
 #welcome-section {
-  background-color: green;
-  /* display: block; */
-  height: 100vh;
-  /* padding-top: 60px; */
-  /* padding-bottom: 10%; */
-
+  background-color: #eeee;
+  height: 110vh;
 }
 #welcome_text {
-  display: inline-block;
-  /* vertical-align: middle; */
-  line-height: 100vh;
+  /* display: inline-block; */
+  font-size: 4rem;
+  line-height: 110vh;
 }
 
 #projects {
-  background-color: grey;
+  background-color: #b9b9b9;
   padding: 20px;
   padding-top:60px;
   margin-top: -60px;
@@ -56,7 +53,6 @@ body {
 
 .flex-container {
   display: flex;
-  /* flex-direction: row; */
   flex-wrap: wrap;
   justify-content: space-around;
   padding-top: 40px;
@@ -71,8 +67,6 @@ body {
   padding: 5px;
   align-items: center;
   margin: 20px;
-  /* width: 25%; */
-  /* max-width: 400px; */
  }
  .project-tile {
   color: brown;
@@ -83,25 +77,26 @@ body {
 
  #contact {
    padding: 25px;
-   vertical-align: middle;
-   text-align: center;
+  
  }
- .contact-methods #profile-link {
+ .contact-methods #profile-link{
     display: inline-block;
     height: 100px;
     width: 100px;
-    border-radius: 100%;
+    border-radius: 50%;
     border: 1px solid black;
     background-color: #eee;
-    text-decoration: none;
+    /* text-decoration: none; */
     line-height: 100px;
-    /* vertical-align: middle; */
-    /* padding: 25px; */
     margin: 20px;
  }
 
+
  @media screen and (max-width: 950px) {
-  
+
+  #navbar {
+    text-align: center;
+  }
   
   .flex-container  {
      display: flex;
@@ -111,7 +106,6 @@ body {
      padding-top: 40px;
      padding-bottom: 40px;
      margin: 0;
-
  }
  .card_content {
      display: flex;
@@ -121,6 +115,5 @@ body {
      align-items: center;
      width: 80%;
      margin: 10px;
-
  }
 }
