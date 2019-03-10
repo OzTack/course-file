@@ -72,24 +72,25 @@ section ul  {
     
     #main-doc   {
         display: flex;
-        padding-top:0px;
+        padding-top: 0px;
         padding-bottom: 0px;
         margin: 0;
-        height: 2000px;
         width: 100%;
-        /* padding-top: 136px; */
+    }
+
+    .main-section {
+        padding-top: 175px;
     }
     
     nav  {
         display: inline-block;
-        position: sticky;
+        position: fixed;
         top: 0;
         width: 100%;
         height: auto;
         background-color: #ddd;
         border-right: 1px solid black;
         padding: 5px;
-        margin-bottom: 0;
         overflow: hidden;
     }
     nav ul {
