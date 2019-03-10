@@ -55,7 +55,7 @@ nav {
      padding-left: 25px;
  }
 
-section code {
+section code pre {
     padding: 5px;
     display: block;
     background-color: #aaa;
@@ -71,15 +71,19 @@ section ul  {
 @media (max-width: 900px) {
     
     #main-doc   {
-        display: flex;
+        display: block;
         padding-top: 0px;
         padding-bottom: 0px;
-        margin: 0;
+        margin-top: 175px;
+        margin-left: 0;
         width: 100%;
     }
 
     .main-section {
         padding-top: 175px;
+        margin-top: -175px;
+        padding-bottom: 135px;
+        overflow: auto;
     }
     
     nav  {
@@ -108,4 +112,5 @@ section ul  {
         margin-bottom: 5px;
         border-radius: 10px;
     }
+    
 }
